@@ -45,7 +45,7 @@ style/
 
 Detailed documentation of the system, screenshots, database design, and application workflow can be found in the project report below:
 
-👉 [Download the Report](docs/trendyolClone.docx)
+👉 [Download the Report](trendyolClone.docx)
 
 ## 💡 Purpose of the Project
 
