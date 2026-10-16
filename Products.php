@@ -28,12 +28,12 @@ if ($search) {
 }
 
 if ($min_price) {
-    $min_price = $conn->real_escape_string($min_price);
+    $min_price = (float) $min_price;
     $sql .= " AND price >= $min_price";
 }
 
 if ($max_price) {
-    $max_price = $conn->real_escape_string($max_price);
+    $max_price = (float) $max_price;
     $sql .= " AND price <= $max_price";
 }
 

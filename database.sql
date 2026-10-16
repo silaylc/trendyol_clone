@@ -36,8 +36,9 @@ CREATE TABLE IF NOT EXISTS basket (
     FOREIGN KEY (product_id) REFERENCES products(id)
 );
 
-INSERT INTO users (username, password) VALUES ('admin', 'password123');
-INSERT INTO users (username, password) VALUES ('user', '12345');
+-- Şifreler password_hash() ile saklanır. Demo hesaplar: admin / password123, user / 12345
+INSERT INTO users (username, password) VALUES ('admin', '$2y$10$AJP3Z3WHWnU80R2lxqEdvOfB2mlmRB50ejNj3ZppA.bqv4o0Y6IJW');
+INSERT INTO users (username, password) VALUES ('user', '$2y$10$rBPHWR4MjP473JRyZsI1werxtLyOTvNONaZ8q3a5Duofx8Svrk1F6');
 
 
 INSERT INTO products (name, description, price, category, brand, image_url) VALUES 
